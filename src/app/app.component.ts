@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private names:string[] = ['Iron Man', 'Captain America']; 
+  private name:string = 'Antoine'; 
 }
