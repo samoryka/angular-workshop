@@ -5,12 +5,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CoverComponent } from './cover/cover.component';
+import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoverComponent
+    CoverComponent,
+    PokemonListComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
