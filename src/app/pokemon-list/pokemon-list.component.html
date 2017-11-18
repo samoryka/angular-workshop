@@ -3,18 +3,9 @@
   <div class="columns is-multiline">
 
     <!-- Pokemon -->
-    <app-pokemon [name]="'Bulbasaur'"
-                 [image]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'"></app-pokemon>
+    <app-pokemon *ngFor="let pokemon of pokemons" [name]="pokemon.name"
+                 [id]="pokemon.id"></app-pokemon>
 
-
-    <!-- Pokemon -->
-    <app-pokemon [name]="'Ivysaur'"
-                 [image]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png'"></app-pokemon>
-
-
-    <!-- Pokemon -->
-    <app-pokemon [name]="'Venusaur'"
-                 [image]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png'"></app-pokemon>
 
   </div>
 </div>

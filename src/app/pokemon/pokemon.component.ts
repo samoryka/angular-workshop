@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PokemonComponent implements OnInit {
   @Input() name: string;
 
-  @Input() image: string;
+  @Input() id: number;
 
   constructor() { }
 
