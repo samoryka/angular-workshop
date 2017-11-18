@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CoverComponent } from './cover/cover.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { SearchComponent } from './search/search.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SearchComponent } from './search/search.component';
     AppComponent,
     CoverComponent,
     PokemonListComponent,
-    SearchComponent
+    SearchComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule,
