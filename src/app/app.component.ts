@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   private name:string = 'Antoine';
-  
-  private sayHello():void {
-    alert(`Hello ${this.name}`);
-  }
 }
