@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { CoverComponent } from './cover/cover.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoverComponent
   ],
   imports: [
     BrowserModule,
