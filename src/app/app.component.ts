@@ -9,6 +9,6 @@ export class AppComponent {
   private name:string = 'Antoine';
   
   private sayHello():void {
-    alert('Hello');
+    alert(`Hello ${this.name}`);
   }
 }
