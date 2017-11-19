@@ -3,7 +3,8 @@
   <div class="columns is-multiline">
 
     <!-- Pokemon -->
-    <app-pokemon *ngFor="let pokemon of pokemons" [pokemon]="pokemon"></app-pokemon>
+    <app-pokemon *ngFor="let pokemon of pokemons| pokemonFilter: filter"
+                 [pokemon]="pokemon"></app-pokemon>
 
 
   </div>

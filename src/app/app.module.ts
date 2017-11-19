@@ -8,6 +8,7 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { SearchComponent } from './search/search.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import {HttpClientModule} from '@angular/common/http';
+import { PokemonFilterPipe } from './pokemon-filter.pipe';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {HttpClientModule} from '@angular/common/http';
     CoverComponent,
     PokemonListComponent,
     SearchComponent,
-    PokemonComponent
+    PokemonComponent,
+    PokemonFilterPipe
   ],
   imports: [
     BrowserModule,

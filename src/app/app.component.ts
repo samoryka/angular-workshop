@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private name:string = 'Antoine';
+  private search: string;
+
+  filterChanged(search): void {
+    this.search = search;
+  }
 }

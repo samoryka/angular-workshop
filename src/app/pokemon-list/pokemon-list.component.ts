@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {Pokemon} from '../pokemon';
 import {PokemonService} from '../pokemon.service';
 
@@ -10,11 +10,13 @@ import {PokemonService} from '../pokemon.service';
 })
 export class PokemonListComponent implements OnInit {
   private pokemons: Pokemon[] = [];
+  @Input() filter: string;
 
   constructor(private pokemonService: PokemonService) { }
 
   ngOnInit() {
-    this.pokemonService.getPokemon().subscribe(pokemons => this.pokemons = pokemons);
+    this.pokemonService.getPokemon()
+      .subscribe(pokemons => this.pokemons = pokemons);
   }
 
 }

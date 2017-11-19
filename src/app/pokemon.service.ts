@@ -14,6 +14,6 @@ export class PokemonService {
 
   public getPokemon(): Observable<Pokemon[]> {
     return this.httpClient
-      .get<Pokemon[]>('https://gist.githubusercontent.com/Slashgear/386e7603eebf32fe51a7d5a5f3836d22/raw/0b595285127b7690301b9546d2e75bcda944a805/pokemons.json', {responseType: 'json'}) as Observable<Pokemon[]>;
+      .get<Pokemon[]>('https://gist.githubusercontent.com/Slashgear/386e7603eebf32fe51a7d5a5f3836d22/raw/0b595285127b7690301b9546d2e75bcda944a805/pokemons.json', {responseType: 'json'});
   }
 }
