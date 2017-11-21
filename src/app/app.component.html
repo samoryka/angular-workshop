@@ -3,7 +3,7 @@
   <app-cover></app-cover>
 
   <!-- Searchbar -->
-  <app-search></app-search>
+  <app-search (onChange)="searchChanged($event)"></app-search>
 
   <!-- Result set -->
 <app-pokemon-list></app-pokemon-list>
