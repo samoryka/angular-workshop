@@ -11,6 +11,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 
 import {PokemonService} from './service/pokemon.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     CoverComponent,
     SearchComponent,
     PokemonListComponent,
-    PokemonComponent
+    PokemonComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

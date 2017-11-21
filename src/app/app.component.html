@@ -6,6 +6,6 @@
   <app-search (onChange)="searchChanged($event)"></app-search>
 
   <!-- Result set -->
-<app-pokemon-list></app-pokemon-list>
+<app-pokemon-list [filterCondition]="filterCondition"></app-pokemon-list>
 
 </div>

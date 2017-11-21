@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Pokemon } from '../model/pokemon';
 import { PokemonService } from '../service/pokemon.service';
 
@@ -9,7 +9,9 @@ import { PokemonService } from '../service/pokemon.service';
 })
 export class PokemonListComponent implements OnInit {
 
+  @Input() filterCondition: string;
   pokemons: Pokemon[] = [];
+
   constructor(private pokemonService: PokemonService) {}
 
   ngOnInit() {
