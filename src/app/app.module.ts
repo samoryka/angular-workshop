@@ -9,6 +9,8 @@ import { SearchComponent } from './search/search.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 
+import {PokemonService} from './service/pokemon.service';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [PokemonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
